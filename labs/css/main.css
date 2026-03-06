@@ -338,3 +338,85 @@ margin: 0 0 4rem;
   .lab3 .lab3-tile--d { grid-column: 5 / 9; grid-row: 10 / 13; }
   .lab3 .lab3-tile--e { grid-column: 1 / 5; grid-row: 9 / 12; }
 }
+
+
+/* =========================
+   LAB 4 (isolated namespace)
+   ========================= */
+
+  body.lab4 {
+  margin: 0;
+  padding: 0;
+  background: #202428;
+  color: #f1e7cf;
+  font-family: Georgia, "Times New Roman", serif;
+} 
+
+.lab4 .lab4-wrap {
+  
+  background-image:
+    linear-gradient(rgba(20, 24, 28, 0.45), rgba(20, 24, 28, 0.62)),
+    url("/images/waterfall.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.lab4 .lab4-overlay-block {
+  width: min(88vw, 600px);
+  height: 420px;
+  margin: 2rem auto;
+  background: rgba(255, 100, 0, 0.68);
+  mix-blend-mode: hard-light;
+  filter: contrast(150%) saturate(150%);
+  transform: translateY(-80px);
+  
+}
+
+.lab4 .lab4-overlay-text {
+  margin: 0;
+  color: #fff7e8;
+  font-size: 2rem;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lab4 h1 {
+  margin: 0;
+  color: #fff7e8;
+  font-size: 3rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.lab4 .lab4-navlist {
+  list-style: none;
+  margin: 0 0 4rem;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+
+
+.lab4 .lab4-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.06em;
+}
+
+.lab4 .lab4-btn:hover { color: #e0c8c1; 
+}
