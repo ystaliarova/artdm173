@@ -420,3 +420,18 @@ margin: 0 0 4rem;
 
 .lab4 .lab4-btn:hover { color: #e0c8c1; 
 }
+
+.lab4 .lab4-mask-section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.lab4 .lab4-mask-frame img {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
