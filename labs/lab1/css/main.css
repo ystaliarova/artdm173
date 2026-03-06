@@ -1,0 +1,155 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,200;0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+h1 { font-family: "Lato", sans-serif; 
+  font-size: 2.5rem;
+  /*letter-spacing: .5px;*/
+  color: #fbfbfb;
+  font-weight: 700;
+  align-items: center;
+}
+
+h2 { font-family: serif; 
+  font-weight: 500;
+  font-size: 2rem; 
+  color: #fbfbfb;
+  margin:0 0 1rem;
+}
+
+
+p { font-family: serif; 
+  font-weight: 400; 
+  font-size: 18px;
+  line-height: 1.4;
+  color: #cab9b9;
+  margin:0 0 1rem;
+}
+
+
+li {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #333333;
+    
+}
+
+/* nav */
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+	justify-content: space-between;           
+}
+
+.nav-list a {
+  color: #fefefe;  
+  text-decoration: none;           
+}
+
+.site-nav {
+  background: #dd6109;    
+}
+  
+/* header */
+
+.site-header {
+  background:#a39c9c;
+  display: flex;
+  flex-direction: column;  
+  /*gap: .2rem;*/
+}
+
+.brand {
+  display:flex;            
+  align-items:center;
+  gap: 2rem;
+}
+
+.logo {
+  width: 62px;
+  padding: 1rem 1.3rem;
+  /*object-fit: cover;*/
+  object-fit: fill;
+}
+
+body {
+  display: block;
+  margin: 0px;
+  background: #000000;
+}
+
+/* main */
+
+.tile {
+  aspect-ratio: 10 / 12;
+  width: 100%;      
+  overflow: hidden;
+}
+
+.tile img {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.grid-top,
+.grid-bot {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: .4rem;
+  
+}
+
+.grid-mid {
+  display:grid;
+  grid-template-columns: 1fr 2fr 1fr; 
+  gap: .4rem;
+  align-items: stretch;
+}
+
+main.grid{
+  display: grid;
+  gap: .4rem;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+
+/* media queries mobile-first */
+
+@media (max-width: 480px){
+  
+ h1 {
+    font-size: 1.4rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+ }
+
+ p {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+ .content {
+  padding: .9rem;
+}
+
+  .brand {
+    gap: .6rem;
+    padding: 0rem 1.2rem 0rem 0rem;
+  }
+
+  .logo {
+    width: 42px;
+    padding: .8rem;
+  }
+
+}
