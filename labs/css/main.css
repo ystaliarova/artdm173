@@ -465,3 +465,31 @@ margin: 0 0 4rem;
 .lab4 .lab4-filter-sepia {
   filter: sepia(70%) saturate(120%);
 }
+
+.lab4 .lab4-shape-section {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.lab4 .lab4-section-title {
+  margin: 0 0 1.5rem;
+  color: #f1e7cf;
+  font-size: 3rem;
+}
+
+.lab4 .lab4-shape-copy {
+  max-width: 900px;
+  line-height: 1.8;
+}
+
+.lab4 .lab4-shape-image {
+  float: left;
+  width: 280px;
+  height: 280px;
+  margin: 0 2rem 1rem 0;
+  object-fit: cover;
+  border-radius: 50%;
+  shape-outside: circle(50%);
+  -webkit-shape-outside: circle(50%);
+}
