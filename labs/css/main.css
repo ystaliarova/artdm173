@@ -376,6 +376,7 @@ margin: 0 0 4rem;
 
 .lab4 .lab4-overlay-text {
   margin: 0;
+  padding: 4rem;
   color: #fff7e8;
   font-size: 2rem;
   line-height: 1.4;
@@ -396,8 +397,7 @@ margin: 0 0 4rem;
 .lab4 .lab4-navlist {
   list-style: none;
   margin: 0 0 4rem;
-  padding: 0;
-
+  padding: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -490,6 +490,24 @@ margin: 0 0 4rem;
   margin: 0 2rem 1rem 0;
   object-fit: cover;
   border-radius: 50%;
-  shape-outside: circle(50%);
-  -webkit-shape-outside: circle(50%);
+  shape-outside: ellipse(); /* not validate */
+  clip-path: ellipse();    /* not validate */
+  /*shape-outside: inset(75px);
+  clip-path: inset(75px);*/
+  
+}
+
+@media (max-width: 700px) {
+
+  .lab4 .lab4-filter-grid {
+  
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  
+}
+
+  .lab4 .lab4-overlay-text {
+    font-size: 1.2rem
+
+}
 }
