@@ -1,0 +1,137 @@
+/* =========================
+   LAB 5 - RESPONSIVE IMAGES
+   ========================= */
+
+body.lab5 {
+  background: #050505;
+  color: #f4efe8;
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 0;
+}
+
+
+.lab5 .lab5-header {
+  padding: 1.5rem 1rem 0;
+}
+
+.lab5 .lab5-nav-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.lab5 h1 {
+  margin-top: 6rem;
+  margin-bottom: 0;
+  font-family: "Merriweather", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #e7c0a4;
+}
+
+
+.lab5 .lab5-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+.lab5 .lab5-note {
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+
+.lab5 .section-title {
+  max-width: 1100px;
+  margin: 4rem auto 1rem;
+  padding: 0 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+.lab5 .bg-full-section {
+  margin-top: 4rem;
+  padding: 0 1rem;
+}
+
+.lab5 .responsive-bg {
+  width: 100%;
+  min-height: 30rem;
+  border-radius: 1rem;
+
+  background-image: url("/images/mountains\ wide.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+
+.lab5 .responsive-bg-overlay {
+  width: 100%;
+  padding: 2rem 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.72),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+
+.lab5 .bg-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.lab5 .bg-content p {
+  max-width: 36rem;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .lab5 .lab5-header {
+    padding: 1rem 0.75rem 0;
+  }
+
+  .lab5 .lab5-main {
+    padding: 1.5rem 0.75rem 3rem;
+  }
+
+  .lab5 h1 {
+    margin-top: 4rem;
+    font-size: 2.2rem;
+  }
+
+  .lab5 .section-title {
+    margin: 3rem auto 1rem;
+    padding: 0 0.75rem;
+    font-size: 1.6rem;
+  }
+
+  .lab5 .bg-full-section {
+    padding: 0 0.75rem;
+  }
+
+  .lab5 .responsive-bg {
+    min-height: 22rem;
+    background-position: 72% center;
+    border-radius: 0.75rem;
+  }
+
+  .lab5 .responsive-bg-overlay {
+    padding: 1.25rem 0;
+  }
+
+  .lab5 .bg-content {
+    padding: 0 1rem;
+  }
+}
