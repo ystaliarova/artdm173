@@ -89,11 +89,46 @@ body.lab5 {
 }
 
 .lab5 .bg-content p {
-  max-width: 36rem;
   margin: 0;
   font-size: 1rem;
   line-height: 1.5;
 }
+
+
+
+
+.lab5 .object-fit-section {
+  margin-top: 4rem;
+  padding: 0 1rem;
+}
+
+.lab5 .object-fit-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.lab5 .object-fit-img {
+  width: 100%;
+  height: 20rem;
+
+  object-fit: cover;
+  object-position: center;
+
+  display: block;
+}
+
+.lab5 .object-fit-description {
+  max-width: 1100px;
+  margin: 1rem auto 0;
+  padding: 0 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+
 
 /* MOBILE */
 
@@ -134,4 +169,14 @@ body.lab5 {
   .lab5 .bg-content {
     padding: 0 1rem;
   }
+
+
+
+
+
+.lab5 .object-fit-img {
+    height: 14rem;
+  }
+
+
 }
