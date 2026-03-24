@@ -12,84 +12,96 @@
 
 
 <body class="lab5">
-  
-    <header class="">
-      <nav class="">
-        <ul class="">
-          <li><a class="" href="/index.html">Jump Page</a></li>
 
-          <li><a class="" href="">Arrival Page</a></li>
-        </ul>
-      </nav>
-      <h1 class="">Responsive Images
-      </h1>
-      <p class=""></p>
-    </header>
+  <header class="">
+    <nav class="">
+      <ul class="">
+        <li><a class="" href="/index.html">Jump Page</a></li>
 
-    <main class="lab5-main">
+        <li><a class="" href="">Arrival Page</a></li>
+      </ul>
+    </nav>
+    <h1 class="">Responsive Images
+    </h1>
+    <p class=""></p>
+  </header>
 
-<section class="bg-full-section">
-  <h2 class="section-title">Responsive Background Image</h2>
+  <main class="lab5-main">
 
-  <div class="responsive-bg">
-    <div class="responsive-bg-overlay">
-      <div class="bg-content">
-        <p>
-          The background position changes
-          on smaller screens to keep the main focal area visible.
-        </p>
+    <section class="bg-full-section">
+      <h2 class="section-title">Responsive Background Image</h2>
+
+      <div class="responsive-bg">
+        <div class="responsive-bg-overlay">
+          <div class="bg-content">
+            <p>
+              The background position changes
+              on smaller screens to keep the main focal area visible.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="object-fit-section">
-  <h2 class="section-title">Object-Fit: Cover</h2>
+    <section class="object-fit-section">
+      <h2 class="section-title">Object-Fit: Cover</h2>
 
-  <div class="object-fit-wrapper">
-    <img 
-      class="object-fit-img"
-      src="/images/house front view.jpg"
-      alt="Lake with mountains and calm water">
-  </div>
+      <div class="object-fit-wrapper">
+        <img class="object-fit-img" src="/images/house_view.jpg" alt="Lake with mountains and calm water">
+      </div>
 
-  <p class="object-fit-description">
-   The image scales to fill the container
-    without distortion, while keeping the proportions.
-  </p>
-</section>
+      <p class="object-fit-description">
+        The image scales to fill the container
+        without distortion, while keeping the proportions.
+      </p>
+    </section>
 
 
-<section class="srcset-section">
-  <h2 class="section-title">Responsive Image (srcset & sizes)</h2>
+    <section class="srcset-section">
+      <h2 class="section-title">Responsive Image (srcset & sizes)</h2>
 
-  <div class="srcset-wrapper">
-    <img
-      src="/images/person in nature.jpg"
-      srcset="
-        /images/person in nature-400.jpg 400w,
-        /images/person in nature-800.jpg 800w,
-        /images/person in nature-1200.jpg 1200w
-      "
-      sizes="
-        (max-width: 700px) 90vw,
-        (max-width: 1100px) 80vw,
-        800px
-      "
-      alt="costal landscape with person sitting on rock"
-      class="srcset-img">
-  </div>
+      <div class="srcset-wrapper">
+        <img src="/images/person_nature.jpg" srcset="
+      /images/person_nature.jpg 400w,
+     /images/person_nature.jpg 800w,
+      /images/person_nature.jpg 1200w
+      " sizes="
+      (max-width: 700px) 90vw,
+      (max-width: 1100px) 80vw,
+      800px
+    " alt="Coastal landscape with a person sitting on a rock" class="srcset-img">
+      </div>
 
-  <p class="srcset-description">
-    The browser selects the most appropriate
-    image resolution depending on the screen size.
-  </p>
-</section>
+      <p class="srcset-description">
+        The browser selects the most appropriate
+        image resolution depending on the screen size.
+      </p>
+    </section>
 
 
-      <p>Ⓒ 2026 This fictitious website was created as an academic exercise for the Diablo Valley College course,
-            ARTDM-173: Web Design II. In no way should this content be considered or used as a source of factual public
-            information.</p>
-       
-    </main>
+    <section class="picture-section">
+      <h2 class="section-title">Art Direction with Picture</h2>
+
+      <div class="picture-wrapper">
+        <picture>
+          <!--mobile-->
+          <source media="(max-width: 700px)" srcset="/images/mushroom_mob.jpg">
+
+          <!--fallback-->
+          <img src="/images/mushroom.jpg" alt="mushroom in a forest" class="picture-img">
+        </picture>
+      </div>
+
+      <p class="picture-description">
+        This example uses the picture element for art direction. The image changes
+        composition depending on the screen size.
+      </p>
+    </section>
+
+
+    <p>Ⓒ 2026 This fictitious website was created as an academic exercise for the Diablo Valley College course,
+      ARTDM-173: Web Design II. In no way should this content be considered or used as a source of factual public
+      information.</p>
+
+  </main>
 </body>

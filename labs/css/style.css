@@ -60,7 +60,7 @@ body.lab5 {
   min-height: 30rem;
   border-radius: 1rem;
 
-  background-image: url("/images/mountains\ wide.jpg");
+  background-image: url("/images/mountains_wide.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -74,11 +74,9 @@ body.lab5 {
 .lab5 .responsive-bg-overlay {
   width: 100%;
   padding: 2rem 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.72),
-    rgba(0, 0, 0, 0)
-  );
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.72),
+      rgba(0, 0, 0, 0));
 }
 
 
@@ -158,6 +156,34 @@ body.lab5 {
 
 
 
+.lab5 .picture-section {
+  margin-top: 4rem;
+  padding: 0 1rem;
+}
+
+.lab5 .picture-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.lab5 .picture-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.lab5 .picture-description {
+  max-width: 1100px;
+  margin: 1rem auto 0;
+  padding: 0 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+
 /* MOBILE */
 
 @media (max-width: 700px) {
@@ -202,7 +228,7 @@ body.lab5 {
 
 
 
-.lab5 .object-fit-img {
+  .lab5 .object-fit-img {
     height: 14rem;
   }
 
