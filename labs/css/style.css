@@ -130,6 +130,34 @@ body.lab5 {
 
 
 
+.lab5 .srcset-section {
+  margin-top: 4rem;
+  padding: 0 1rem;
+}
+
+.lab5 .srcset-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.lab5 .srcset-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.lab5 .srcset-description {
+  max-width: 1100px;
+  margin: 1rem auto 0;
+  padding: 0 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+
 /* MOBILE */
 
 @media (max-width: 700px) {

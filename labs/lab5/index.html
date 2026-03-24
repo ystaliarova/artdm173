@@ -60,6 +60,33 @@
 </section>
 
 
+<section class="srcset-section">
+  <h2 class="section-title">Responsive Image (srcset & sizes)</h2>
+
+  <div class="srcset-wrapper">
+    <img
+      src="/images/person in nature.jpg"
+      srcset="
+        /images/person in nature-400.jpg 400w,
+        /images/person in nature-800.jpg 800w,
+        /images/person in nature-1200.jpg 1200w
+      "
+      sizes="
+        (max-width: 700px) 90vw,
+        (max-width: 1100px) 80vw,
+        800px
+      "
+      alt="costal landscape with person sitting on rock"
+      class="srcset-img">
+  </div>
+
+  <p class="srcset-description">
+    The browser selects the most appropriate
+    image resolution depending on the screen size.
+  </p>
+</section>
+
+
       <p>Ⓒ 2026 This fictitious website was created as an academic exercise for the Diablo Valley College course,
             ARTDM-173: Web Design II. In no way should this content be considered or used as a source of factual public
             information.</p>
