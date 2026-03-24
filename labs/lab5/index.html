@@ -13,17 +13,20 @@
 
 <body class="lab5">
 
-  <header class="">
-    <nav class="">
-      <ul class="">
-        <li><a class="" href="/index.html">Jump Page</a></li>
+  <header class="lab5-header">
+    <nav class="lab5-nav">
+      <ul class="lab5-nav-list">
+        <li><a class="btn-pill" href="/index.html">Jump Page</a></li>
 
-        <li><a class="" href="">Arrival Page</a></li>
+        <li><a class="btn-pill" href="">Arrival Page</a></li>
       </ul>
     </nav>
-    <h1 class="">Responsive Images
+    <h1>Responsive Images
     </h1>
-    <p class=""></p>
+    <p class="lab5-intro">
+      This page demonstrates different techniques for working with responsive images,
+  including background images, object-fit, srcset, and the picture element.
+    </p>
   </header>
 
   <main class="lab5-main">
@@ -31,16 +34,11 @@
     <section class="bg-full-section">
       <h2 class="section-title">Responsive Background Image</h2>
 
-      <div class="responsive-bg">
-        <div class="responsive-bg-overlay">
-          <div class="bg-content">
-            <p>
-              The background position changes
-              on smaller screens to keep the main focal area visible.
-            </p>
-          </div>
-        </div>
-      </div>
+      <div class="responsive-bg"></div>
+
+      <p class="bg-description">
+        The background position changes on smaller screens to keep the main focal area visible.
+      </p>
     </section>
 
     <section class="object-fit-section">
@@ -61,15 +59,19 @@
       <h2 class="section-title">Responsive Image (srcset & sizes)</h2>
 
       <div class="srcset-wrapper">
-        <img src="/images/person_nature.jpg" srcset="
-      /images/person_nature.jpg 400w,
-     /images/person_nature.jpg 800w,
+        <img src="/images/person_nature.jpg" 
+        srcset="
+      /images/person_nature-400.jpg 400w,
+     /images/person_nature-800.jpg 800w,
       /images/person_nature.jpg 1200w
-      " sizes="
+      " 
+      sizes="
       (max-width: 700px) 90vw,
       (max-width: 1100px) 80vw,
       800px
-    " alt="Coastal landscape with a person sitting on a rock" class="srcset-img">
+    " 
+    alt="Coastal landscape with a person sitting on a rock" 
+    class="srcset-img">
       </div>
 
       <p class="srcset-description">
@@ -97,10 +99,14 @@
       </p>
     </section>
 
+</main>
 
+<footer class="lab5-footer">
     <p>Ⓒ 2026 This fictitious website was created as an academic exercise for the Diablo Valley College course,
       ARTDM-173: Web Design II. In no way should this content be considered or used as a source of factual public
       information.</p>
+      </footer>
 
-  </main>
+  
 </body>
+</html>

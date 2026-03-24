@@ -20,12 +20,13 @@ body.lab5 {
 }
 
 .lab5 h1 {
+  text-align: center;
   margin-top: 6rem;
   margin-bottom: 0;
   font-family: "Merriweather", serif;
   font-size: 3rem;
   font-weight: 700;
-  color: #e7c0a4;
+  color: #f4efe8;
 }
 
 
@@ -70,29 +71,13 @@ body.lab5 {
   overflow: hidden;
 }
 
-
-.lab5 .responsive-bg-overlay {
-  width: 100%;
-  padding: 2rem 0;
-  background: linear-gradient(to top,
-      rgba(0, 0, 0, 0.72),
-      rgba(0, 0, 0, 0));
-}
-
-
-.lab5 .bg-content {
+.lab5 .bg-description {
   max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1.25rem;
-}
-
-.lab5 .bg-content p {
-  margin: 0;
+  margin: 1rem auto 0;
+  padding: 0 1rem;
   font-size: 1rem;
   line-height: 1.5;
 }
-
-
 
 
 .lab5 .object-fit-section {
@@ -182,6 +167,73 @@ body.lab5 {
   line-height: 1.5;
 }
 
+/* navigation */
+.lab5 .lab5-nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.lab5 .lab5-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* buttons */
+.lab5 .btn-pill {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+
+  background: rgba(232, 212, 178, 0.2);
+  color: #f4efe8;
+
+  text-decoration: none;
+  font-size: 0.9rem;
+
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.lab5 .btn-pill:hover {
+  background: rgba(232, 212, 178, 0.4);
+  transform: translateY(-1px);
+}
+
+
+
+/* fooret */
+.lab5 .lab5-footer {
+  max-width: 1100px;
+  margin: 4rem auto 2rem;
+  padding: 1.5rem 1rem 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  text-align: center;
+}
+
+.lab5 .lab5-footer p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: rgba(217, 214, 209, 0.6);
+}
+
+
+.lab5 .lab5-intro {
+  max-width: 700px;
+  margin: 1rem auto 0;
+  text-align: center;
+
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(244, 239, 232, 0.7);
+}
 
 
 /* MOBILE */
@@ -215,18 +267,6 @@ body.lab5 {
     background-position: 72% center;
     border-radius: 0.75rem;
   }
-
-  .lab5 .responsive-bg-overlay {
-    padding: 1.25rem 0;
-  }
-
-  .lab5 .bg-content {
-    padding: 0 1rem;
-  }
-
-
-
-
 
   .lab5 .object-fit-img {
     height: 14rem;
