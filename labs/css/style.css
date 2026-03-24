@@ -112,7 +112,6 @@ body.lab5 {
 
 
 
-
 .lab5 .srcset-section {
   margin-top: 4rem;
   padding: 0 1rem;
@@ -235,6 +234,25 @@ body.lab5 {
   color: rgba(244, 239, 232, 0.7);
 }
 
+/* svg section */
+.lab5 .svg-section {
+  margin-top: 4rem;
+  padding: 0 1rem;
+}
+
+.lab5 .svg-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lab5 .svg-description {
+  max-width: 1100px;
+  margin: 1rem auto 0;
+  padding: 0 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
 
 /* MOBILE */
 
