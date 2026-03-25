@@ -1,0 +1,27 @@
+/* =========================
+   animation
+   ========================= */
+   .Hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.heading-xl {
+  font-size: clamp(2.5rem, 13vw, 13rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.Hero__image {
+  position: fixed;
+  opacity: 0;
+  width: 220px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.Hero__text {
+  text-align: center;
+}
