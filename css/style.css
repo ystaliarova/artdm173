@@ -42,7 +42,7 @@ h4 {
 
 
 /* =========================
-   animation
+   animation home page
    ========================= */
   .Hero {
   display: flex;
@@ -421,4 +421,19 @@ nav {
   font-size: 0.75rem;
   text-align: right;
   color: #F9F9F9;
+}
+
+/* =========================
+    INDIVIDUAL PROJECT
+   ========================= */
+.project-intro {
+  padding: 4rem 0;
+}
+
+.project-intro-text {
+  max-width: 50rem;
+  margin: 4rem auto 1.125rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: var(--color-text);
 }
