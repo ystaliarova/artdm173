@@ -256,7 +256,7 @@ body.lab5 {
 
 /* MOBILE */
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
   .lab5 .lab5-header {
     padding: 1rem 0.75rem 0;
   }

@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
 
 :root {
-  --color-bg: #f9f9f9;
-  --color-text: #120304;
+  --color-black: #120304;
+  --color-white: #f9f9f9;
+  --color-tangerine: #E64021;
+   --color-grey: #808080;
 }
 
 
 body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
+  background-color: var(--color-white);
+  color: var(--color-black);
 
   font-family: 'Instrument Sans', sans-serif;
   font-size: 1.25rem; /* 20px */
@@ -111,7 +113,7 @@ h4 {
   align-items: center;
   justify-content: center;
 
-  color: white;
+  color: var(--color-white);
   font-size: 1.25rem;
 
   background: rgba(0, 0, 0, 0.4);
@@ -155,7 +157,7 @@ h4 {
 
 .marquee_inner span {
   font-size: 1.25rem;
-  color: #777;
+  color: var(--color-grey);
 }
 
 @keyframes scroll {
@@ -214,7 +216,7 @@ h4 {
   border: 2px solid;
   border-radius: 0.25rem;
 
-  color: #F9F9F9;
+  color: var(--color-white);
   font-size: 1.25rem;
   text-decoration: none;
 
@@ -290,7 +292,7 @@ nav {
 }
 
 .nav-link.active {
-  border-bottom: 2px solid var(--color-text);
+  border-bottom: 2px solid var(--color-black);
 }
 
 .drop-list {
@@ -306,8 +308,8 @@ nav {
   width: max-content;
   padding: 1.5rem 2rem;
 
-  background-color: var(--color-bg);
-  border: 1px solid var(--color-text);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
 
   opacity: 0;
   visibility: hidden;
@@ -337,7 +339,7 @@ nav {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--color-black);
   font-size: 1.25rem;
 }
 
@@ -351,7 +353,7 @@ nav {
 
 .footer {
   background-color: #120304;
-  color: #F9F9F9;
+  color: var(--color-white);
 }
 
 .footer_top {
@@ -361,7 +363,7 @@ nav {
 .footer_title {
   margin: 0;
   font-size: 2rem;
-  color: #F9F9F9;
+  color: var(--color-white);
 }
 
 .footer_middle {
@@ -377,9 +379,9 @@ nav {
 
 .footer_email {
   font-size: 0.9rem;
-  color: #F9F9F9;
+  color: var(--color-white);
   text-decoration: none;
-  border-bottom: 1px solid #F9F9F9;
+  border-bottom: 1px solid var(--color-white);
   padding-bottom: 0.2rem;
 }
 
@@ -420,7 +422,7 @@ nav {
   margin: 0;
   font-size: 0.75rem;
   text-align: right;
-  color: #F9F9F9;
+  color: var(--color-white);
 }
 
 /* =========================
@@ -435,5 +437,69 @@ nav {
   margin: 4rem auto 1.125rem;
   font-size: 1.25rem;
   line-height: 1.4;
-  color: var(--color-text);
+  color: var(--color-black);
+}
+
+
+/* =========================
+    resume button
+   ========================= */
+
+.resume_button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.75rem 2.5rem;
+
+  border: 2px solid;
+  border-radius: 0.25rem;
+
+  color: var(--color-black);
+  font-size: 1.25rem;
+  text-decoration: none;
+
+  background: rgba(249, 249, 249, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition: all 0.3s ease;
+}
+
+.resume_button:hover {
+  background: rgba(249, 249, 249, 0.35);
+  border-color: var(--color-grey);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.resume_icon {
+  display: inline-block;
+  font-size: 1.3rem;
+}
+
+
+/* =========================
+    resume image
+   ========================= */
+
+.resume-preview {
+  padding: 4rem 0;
+}
+
+.resume-preview-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-image {
+  width: 100%;
+  max-width: 800px;
+
+  border-radius: 0.5rem;
+
+  box-shadow: 0 8px 30px rgba(18, 3, 4, 0.15);
+
+  display: block;
 }
