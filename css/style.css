@@ -4,7 +4,7 @@
   --color-black: #120304;
   --color-white: #f9f9f9;
   --color-tangerine: #E64021;
-   --color-grey: #808080;
+  --color-grey: #808080;
 }
 
 
@@ -13,40 +13,46 @@ body {
   color: var(--color-black);
 
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;
+  /* 20px */
   line-height: 1.5;
   margin: 0;
 }
 
 .heading-xl {
-  font-size: 3rem; /* H1: 40px */
+  font-size: 3rem;
+  /* H1: 40px */
   font-weight: 600;
 }
 
 h2 {
-  font-size: 2rem; /* 32px */
+  font-size: 2rem;
+  /* 32px */
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.75rem; /* 28px */
+  font-size: 1.75rem;
+  /* 28px */
   font-weight: 500;
 }
 
 h4 {
-  font-size: 1rem; /* 16px */
+  font-size: 1rem;
+  /* 16px */
   font-weight: 500;
 }
 
 .caption {
-  font-size: 0.75rem; /* 12px */
+  font-size: 0.75rem;
+  /* 12px */
 }
 
 
 /* =========================
    animation home page
    ========================= */
-  .Hero {
+.Hero {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -140,11 +146,11 @@ h4 {
 /* =========================
    marquee
    ========================= */
-   
-   .marquee {
+
+.marquee {
   overflow: hidden;
   padding: 2rem 0;
-  
+
 }
 
 .marquee_inner {
@@ -164,6 +170,7 @@ h4 {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -174,7 +181,7 @@ h4 {
    ========================= */
 
 
-  .cta {
+.cta {
   position: relative;
   padding: 6rem 2rem;
   text-align: center;
@@ -268,7 +275,7 @@ nav {
   width: auto;
 }
 
-.nav-right > ul {
+.nav-right>ul {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
@@ -330,7 +337,7 @@ nav {
   width: 100%;
 }
 
-.sub-nav li + li {
+.sub-nav li+li {
   margin-top: 1.2rem;
 }
 
