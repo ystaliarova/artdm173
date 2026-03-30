@@ -239,7 +239,7 @@ h4 {
 
 
 /* =========================
-   navigation
+   NAVIGATION
    ========================= */
 
 nav {
@@ -248,6 +248,7 @@ nav {
   align-items: flex-start;
   padding-top: 1.4rem;
   padding-bottom: 1rem;
+  align-items: center;
 }
 
 .nav-left,
@@ -440,15 +441,40 @@ nav {
   color: var(--color-black);
 }
 
+/* =========================
+    RESUME HERO
+   ========================= */
+
+.resume-hero {
+  padding: 4rem 0;
+}
+
+.resume-hero-grid {
+  display: grid;
+  grid-template-columns: 34.5rem 24rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.resume-title-inner {
+  width: 34.5rem;
+}
+
+.resume_button_inner {
+  width: 24rem;
+}
 
 /* =========================
-    resume button
+    RESUME BUTTON
    ========================= */
 
 .resume_button {
+
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  justify-self: start;
 
   padding: 0.75rem 2.5rem;
 
@@ -481,7 +507,7 @@ nav {
 
 
 /* =========================
-    resume image
+    RESUME IMAGE
    ========================= */
 
 .resume-preview {
