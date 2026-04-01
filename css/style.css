@@ -20,38 +20,34 @@ body {
 }
 
 .heading-xl {
-  font-size: 3rem;
-  /* H1: 40px */
+  font-size: 3rem;  /* H1: 40px */
   font-weight: 600;
 }
 
 h2 {
-  font-size: 2rem;
-  /* 32px */
+  font-size: 2rem;  /* 32px */
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.75rem;
-  /* 28px */
+  font-size: 1.75rem; /* 28px */
   font-weight: 500;
 }
 
 h4 {
-  font-size: 1rem;
-  /* 16px */
+  font-size: 1rem; /* 16px */
   font-weight: 500;
 }
 
 .caption {
-  font-size: 0.75rem;
-  /* 12px */
+  font-size: 0.75rem; /* 12px */
 }
 
 
 /* =========================
    animation home page
    ========================= */
+
 .Hero {
   display: flex;
   align-items: flex-end;
@@ -84,6 +80,7 @@ h4 {
 /* =========================
    home page work-grid
    ========================= */
+
 .work-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -144,7 +141,7 @@ h4 {
 }
 
 /* =========================
-   marquee
+   MARQUEE
    ========================= */
 
 .marquee {
@@ -177,7 +174,7 @@ h4 {
 }
 
 /* =========================
-   call to action
+   CALL TO ACTION
    ========================= */
 
 
@@ -317,7 +314,7 @@ nav {
   padding: 1.5rem 2rem;
 
   background-color: var(--color-white);
-  border: 1px solid var(--color-black);
+  border: 2px solid var(--color-black);
 
   opacity: 0;
   visibility: hidden;
@@ -355,6 +352,14 @@ nav {
   text-decoration: underline;
 }
 
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--color-white);
+}
+
 /* =========================
    FOOTER
    ========================= */
@@ -386,7 +391,7 @@ nav {
 }
 
 .footer_email {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--color-white);
   text-decoration: none;
   border-bottom: 1px solid var(--color-white);
@@ -433,9 +438,139 @@ nav {
   color: var(--color-white);
 }
 
+
+/* =========================
+    PROJECTS PAGE
+   ========================= */
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 0 0 5rem;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.project-media img {
+  display: block;
+  width: 100%;
+  height: auto; 
+  object-fit: contain;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.project-title {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.arrow {
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.project-description {
+  margin: 0;
+  /* max-width: 34rem; */
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: var(--color-black);
+}
+
+.project-split {
+  align-items: end;
+}
+
+.project:nth-child(even) {
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.project:nth-child(even) .project-media {
+  order: 2;
+}
+
 /* =========================
     INDIVIDUAL PROJECT
    ========================= */
+
+.about-project {
+  padding: 9rem 0 6rem;
+}
+
+.about-project-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 6rem; 
+  align-items: center;
+}
+
+.about-project-left h1 {
+  margin: 0;
+  max-width: 34rem; 
+}
+
+
+.about-project-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+
+.about-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+.about-label {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--color-grey);
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-list li {
+  line-height: 1.6;
+}
+
+
 .project-intro {
   padding: 4rem 0;
 }
@@ -448,12 +583,16 @@ nav {
   color: var(--color-black);
 }
 
+.about-project-container {
+  align-items: end;
+}
+
 /* =========================
     RESUME HERO
    ========================= */
 
 .resume-hero {
-  padding: 4rem 0;
+  padding: 5rem 0 1rem;
 }
 
 .resume-hero-grid {
@@ -501,10 +640,12 @@ nav {
 
 .resume_button:hover {
   background: rgba(249, 249, 249, 0.35);
-  border-color: var(--color-grey);
+  border-color: var(--color-black);
 
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+
+  box-shadow: 0 6px 10px rgba(84, 82, 82, 0.15);
 }
 
 .resume_icon {
