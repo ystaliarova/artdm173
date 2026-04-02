@@ -185,14 +185,13 @@ h4 {
   color: white;
 
 
-  background: url("images/cta-bg.jpg") center/cover no-repeat;
+  background: url("/images/home_bg.webp") center/cover no-repeat;
 }
 
 .cta::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .cta_content {
