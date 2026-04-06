@@ -147,6 +147,7 @@ h4 {
 .marquee {
   overflow: hidden;
   padding: 2rem 0;
+  background-color: var(--color-white);
 
 }
 
@@ -306,7 +307,7 @@ nav {
 .sub-nav {
   position: absolute;
   top: calc(100% + 0.5rem);
-  left: 10%;
+  left: -20%;
   transform: translateX(-50%);
 
   width: max-content;
