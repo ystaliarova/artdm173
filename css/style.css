@@ -20,27 +20,32 @@ body {
 }
 
 .heading-xl {
-  font-size: 3rem;  /* H1: 40px */
+  font-size: 3rem;
+  /* H1: 40px */
   font-weight: 600;
 }
 
 h2 {
-  font-size: 2rem;  /* 32px */
+  font-size: 2rem;
+  /* 32px */
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.75rem; /* 28px */
+  font-size: 1.75rem;
+  /* 28px */
   font-weight: 500;
 }
 
 h4 {
-  font-size: 1rem; /* 16px */
+  font-size: 1rem;
+  /* 16px */
   font-weight: 500;
 }
 
 .caption {
-  font-size: 0.75rem; /* 12px */
+  font-size: 0.75rem;
+  /* 12px */
 }
 
 
@@ -253,6 +258,8 @@ nav {
   padding-top: 1.4rem;
   padding-bottom: 1rem;
   align-items: center;
+
+  position: relative;
 }
 
 .nav-left,
@@ -360,6 +367,30 @@ header {
   background-color: var(--color-white);
 }
 
+.burger {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  background: var(--color-black);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger.active span:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
 /* =========================
    FOOTER
    ========================= */
@@ -460,7 +491,7 @@ header {
 .project-media img {
   display: block;
   width: 100%;
-  height: auto; 
+  height: auto;
   object-fit: contain;
 }
 
@@ -527,13 +558,13 @@ header {
 .about-project-container {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  gap: 6rem; 
+  gap: 6rem;
   align-items: center;
 }
 
 .about-project-left h1 {
   margin: 0;
-  max-width: 34rem; 
+  max-width: 34rem;
 }
 
 
@@ -676,4 +707,173 @@ header {
   box-shadow: 0 8px 30px rgba(18, 3, 4, 0.15);
 
   display: block;
+}
+
+
+/* =========================
+    MEDIA QUERIES MOBILE-FIRST
+   ========================= */
+
+@media (max-width: 480px) {
+
+
+  /* BURGER N NAV */
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+    flex-shrink: 0;
+  }
+
+  .burger span {
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background: var(--color-black);
+  }
+
+  .nav-right {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--color-white);
+    padding: 1.5rem 2rem;
+  }
+
+  .nav-right.active {
+    display: block;
+  }
+
+  .nav-right>ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sub-nav {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    padding: 0.5rem 0 0 1rem;
+    margin: 0;
+
+    background: transparent;
+    border: none;
+
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .sub-nav li+li {
+    margin-top: 0.75rem;
+  }
+
+  .sub-nav a {
+    font-size: 1rem;
+    text-transform: none;
+  }
+
+  .drop-list:hover .sub-nav {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* HERO */
+  .Hero {
+    min-height: auto;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+
+
+  /* GRID */
+  .work-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .work-card--wide {
+    grid-column: auto;
+  }
+
+  /* PROJECTS */
+  .project {
+    grid-template-columns: 1fr;
+  }
+
+  .project:nth-child(even) {
+    grid-template-columns: 1fr;
+  }
+
+  /* ABOUT PROJECT */
+  .about-project-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* NAV */
+  .nav-right>ul {
+    gap: 1rem;
+  }
+
+  /* TEXT */
+  .heading-xl {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+
+  .resume-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-title-inner,
+  .resume-button-inner,
+  .resume_button_inner {
+    width: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* FOOTER LAYOUT */
+  .footer_middle_inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+
+  .footer_socials {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+
+
+  .footer_copy {
+    text-align: left;
+  }
+
 }

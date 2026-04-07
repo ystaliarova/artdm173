@@ -27,6 +27,12 @@
           </a>
         </div>
 
+        <button class="burger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <div class="nav-right">
           <ul>
             <li><a href="/projects/project3/resume.html" class="nav-link">VIEW RESUME</a></li>
@@ -110,10 +116,15 @@
     <section class="project-intro">
       <div class="container">
         <p class="project-intro-text">
-          Together Art is a nonprofit digital project that supports neurodiverse artists by giving them visibility, opportunities to sell their work, and connect with a wider audience. The platform allows users to discover artists, explore their stories, and support them through purchases or donations.
+          Together Art is a nonprofit digital project that supports neurodiverse artists by giving them visibility,
+          opportunities to sell their work, and connect with a wider audience. The platform allows users to discover
+          artists, explore their stories, and support them through purchases or donations.
         </p>
         <p class="project-intro-text">
-          I conducted usability testing using Maze with participants completing key tasks. Most flows showed high success rates, while some drop-offs helped identify usability issues. After improving scroll affordance and refining the flow, I ran a second round of testing. The feedback was very positive and confirmed that the updated experience feels more natural and intuitive for users.
+          I conducted usability testing using Maze with participants completing key tasks. Most flows showed high
+          success rates, while some drop-offs helped identify usability issues. After improving scroll affordance and
+          refining the flow, I ran a second round of testing. The feedback was very positive and confirmed that the
+          updated experience feels more natural and intuitive for users.
         </p>
       </div>
     </section>
@@ -209,6 +220,19 @@
 
   <!--<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
 <script src="../../js/script.js"></script-->
+
+  <script>
+    const burger = document.querySelector(".burger");
+    const navRight = document.querySelector(".nav-right");
+
+    if (burger && navRight) {
+      burger.addEventListener("click", function () {
+        navRight.classList.toggle("active");
+        burger.classList.toggle("active");
+      });
+    }
+  </script>
+
 
 
 </body>

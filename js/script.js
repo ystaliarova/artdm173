@@ -93,3 +93,14 @@ function animateImage() {
 
   index++;
 }
+
+
+const burger = document.querySelector(".burger");
+const navRight = document.querySelector(".nav-right");
+
+if (burger && navRight) {
+  burger.addEventListener("click", function () {
+    navRight.classList.toggle("active");
+    burger.classList.toggle("active"); 
+  });
+}

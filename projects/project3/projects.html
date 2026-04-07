@@ -27,6 +27,12 @@
           </a>
         </div>
 
+        <button class="burger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <div class="nav-right">
           <ul>
             <li><a href="/projects/project3/resume.html" class="nav-link">VIEW RESUME</a></li>
@@ -81,7 +87,8 @@
                 </h2>
 
                 <p class="project-description">
-                  Autosport Motors is a car dealership expanding its business from selling in-stock vehicles to offering cars from American auctions.
+                  Autosport Motors is a car dealership expanding its business from selling in-stock vehicles to offering
+                  cars from American auctions.
                 </p>
 
                 <!-- MARQUEE -->
@@ -164,7 +171,8 @@
                 </h2>
 
                 <p class="project-description">
-                  A Generative QR product designed from concept to launch, covering the full UX/UI process, including App Store and marketing visuals, as well as paywall optimization.
+                  A Generative QR product designed from concept to launch, covering the full UX/UI process, including
+                  App Store and marketing visuals, as well as paywall optimization.
                 </p>
 
                 <!-- MARQUEE -->
@@ -205,7 +213,8 @@
                 </h2>
 
                 <p class="project-description">
-                  A series of 3D product design studies created in Fusion 360, exploring form, proportions, and structural details.
+                  A series of 3D product design studies created in Fusion 360, exploring form, proportions, and
+                  structural details.
                 </p>
 
                 <!-- MARQUEE -->
@@ -234,21 +243,21 @@
 
           </div>
         </section>
+      </div>
+
+
+      <!-- CTA -->
+      <section class="cta">
+        <div class="cta_content">
+          <h2 class="cta_title">My Experience & Skills</h2>
+
+          <p class="cta_text">
+            See the roles, skills, and projects that <br> define my work as a designer
+          </p>
+
+          <a href="/projects/project3/resume.html" class="cta_button">View Resume</a>
         </div>
-
-
-        <!-- CTA -->
-        <section class="cta">
-          <div class="cta_content">
-            <h2 class="cta_title">My Experience & Skills</h2>
-
-            <p class="cta_text">
-              See the roles, skills, and projects that <br> define my work as a designer
-            </p>
-
-            <a href="projects.html" class="cta_button">View Resume</a>
-          </div>
-        </section>
+      </section>
 
     </section>
 
@@ -296,6 +305,19 @@
 
   <!--<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
 <script src="../../js/script.js"></script-->
+
+  <script>
+    const burger = document.querySelector(".burger");
+    const navRight = document.querySelector(".nav-right");
+
+    if (burger && navRight) {
+      burger.addEventListener("click", function () {
+        navRight.classList.toggle("active");
+        burger.classList.toggle("active");
+      });
+    }
+  </script>
+
 
 
 </body>

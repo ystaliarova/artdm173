@@ -27,6 +27,12 @@
           </a>
         </div>
 
+        <button class="burger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <div class="nav-right">
           <ul>
             <li><a href="/projects/project3/resume.html" class="nav-link active">VIEW RESUME</a></li>
@@ -129,6 +135,18 @@
 
   <!--<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
 <script src="../../js/script.js"></script-->
+
+  <script>
+    const burger = document.querySelector(".burger");
+    const navRight = document.querySelector(".nav-right");
+
+    if (burger && navRight) {
+      burger.addEventListener("click", function () {
+        navRight.classList.toggle("active");
+        burger.classList.toggle("active");
+      });
+    }
+  </script>
 
 
 </body>
