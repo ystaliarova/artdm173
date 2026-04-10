@@ -410,11 +410,10 @@ body.lab5 {
 
 .lab6-footer {
   margin: 8rem auto 0;
-  /* ключевой момент */
   font-size: 0.85rem;
   line-height: 1.4;
   color: white;
-  width: 520px;
+  max-width: 520px;
 
   display: flex;
   justify-content: center;
