@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono&display=swap');
+
+
 /* =========================
    LAB 5 - RESPONSIVE IMAGES
    ========================= */
@@ -290,5 +293,149 @@ body.lab5 {
     height: 14rem;
   }
 
+}
 
+
+
+
+
+/* =========================
+   LAB 6 - Rich Media
+   ========================= */
+
+  .lab6 {
+  font-family: "Geist Mono", monospace;
+}
+
+  .bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  z-index: -1;
+}
+
+.lab6-header {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 0;
+  text-align: center;
+}
+
+.lab6-nav {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 0.75rem 2rem;
+}
+
+.lab6-nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lab6-nav a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.lab6-nav a:hover {
+  color: rgb(239, 128, 217);
+}
+
+.lab6-intro {
+  max-width: 600px;
+  color: white;
+}
+
+.lab6 h1 {
+  color: white;
+  font-size: 52px;
+}
+
+.lab6 h2 {
+  color: white;
+  margin: 0;
+}
+
+.lab6 audio {
+  display: block;
+  margin: 0;
+  width: 300px;
+}
+
+.audio-wrapper {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+}
+
+.lab6 .glass-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+
+  max-width: 320px;
+  padding: 1.5rem;
+  gap: 1rem; 
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 100px; 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.lab6-footer {
+  margin: 8rem auto 0; /* ключевой момент */
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: white;
+  width: 520px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.lab6 .video-block {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  
+}
+
+.lab6 .video-block video {
+  width: 100%;
+  border-radius: 16px;
 }
